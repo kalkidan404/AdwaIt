@@ -177,7 +177,7 @@ elif st.session_state.view == "history":
         "1895–1896 First Italo-Ethiopian War",
         "1896 Battle of Adwa"
     ])
-
+    text = "Please select a time period above to view the history."
     try:
         if period == "1887–1889 Rising Tensions":
             text = wikipedia.summary("Battle of Dogali", sentences=10)
