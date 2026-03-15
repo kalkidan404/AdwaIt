@@ -259,7 +259,7 @@ elif st.session_state.view == "leaders":
         "Fitawrari Habte Giyorgis": "https://th.bing.com/th/id/R.ae82e2f0b2c303e34bd81c9199eb0eda?rik=DatnVvRVtkHeTg&pid=ImgRaw&r=0",
         "Dejazmach Balcha Safo": "https://tse4.mm.bing.net/th/id/OIP.rlwFoAsrcM6wcLo3217TYwHaGe?rs=1&pid=ImgDetMain&o=7&rm=3",
         "Ras Wolde Giyorgis": "https://c8.alamy.com/comp/M77FKN/woldegiorgis-woldeyohannes-waldagiyorgis-waldayohanesright-personal-M77FKN.jpg",
-        "Ras kassa haile Darge": "https://c8.alamy.com/comp/RAM32R/ras-kasa-ethiopian-generalissimo-ethiopian-army-commander-kassa-haile-darge-1881-1956-middle-east-israel-and-reimagined-RAM32R.jpg"
+        "Ras kassa Haile Darge(Ethiopian General in 1896)": "https://c8.alamy.com/comp/RAM32R/ras-kasa-ethiopian-generalissimo-ethiopian-army-commander-kassa-haile-darge-1881-1956-middle-east-israel-and-reimagined-RAM32R.jpg"
     
     }
 
