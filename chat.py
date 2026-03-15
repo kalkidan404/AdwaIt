@@ -126,11 +126,12 @@ if st.session_state.view == "chat":
             st.markdown(prompt)
 
         try:
-            response = requests.post("http://127.0.0.1:8000/ask", json={"question": prompt})
-            answer = response.json()["answer"]
-        except:
-            answer = "The historian is currently offline."
-
+           with st.spinner("📜 Consulting the archives..."):
+                # Use the imported qa_chain directly
+                response = qa_chain.invoke(prompt)
+                answer = response["result"]
+        except Exception as e:
+            answer = f"I am having trouble accessing the archives: {str(e)}"
         st.session_state.messages.append({"role":"assistant","content":answer})
         with st.chat_message("assistant"):
             st.markdown(answer)
