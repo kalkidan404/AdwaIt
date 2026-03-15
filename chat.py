@@ -1,7 +1,8 @@
 import streamlit as st
 import requests
 import wikipedia
-
+import os 
+BACKEND_URL = os.getenv("BACKEND_URL", "http://127.0.0.1:8000")
 st.set_page_config(
     page_title="Adwa AI Assistant",
     page_icon="🇪🇹",
@@ -170,6 +171,7 @@ elif st.session_state.view == "history":
         st.session_state.view = "chat"
 
     period = st.selectbox("Select Time Period", [
+        "",
         "1887–1889 Rising Tensions",
         "1889 Treaty of Wuchale",
         "1895–1896 First Italo-Ethiopian War",
@@ -242,7 +244,7 @@ elif st.session_state.view == "map":
 # -------------------------
 elif st.session_state.view == "leaders":
 
-    st.header("👑 Prominent Figures")
+    st.header("👑 Prominent Figures And their stories")
 
     if st.button("🏠 Home", key="home_leaders"):
         st.session_state.view = "chat"
